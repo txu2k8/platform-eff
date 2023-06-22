@@ -6,7 +6,7 @@ BUILD_IMAGE_SERVER  = golang:1.18
 #请选择node版本
 BUILD_IMAGE_WEB     = node:16
 #项目名称
-PROJECT_NAME        = github.com/flipped-aurora/gin-vue-admin/server
+PROJECT_NAME        = github.com/txu2k8/platform-eff/server
 #配置文件目录
 CONFIG_FILE         = config.yaml
 #镜像仓库命名空间
@@ -64,7 +64,7 @@ build-server-local:
 
 #打包前后端二合一镜像
 image: build 
-	docker build -t ${REPOSITORY}/gin-vue-admin:${TAGS_OPT} -f deploy/docker/Dockerfile .
+	docker build -t ${REPOSITORY}/platform-eff:${TAGS_OPT} -f deploy/docker/Dockerfile .
 
 #尝鲜版
 images: build build-image-web build-image-server
