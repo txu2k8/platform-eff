@@ -3,8 +3,8 @@
  */
 
 const config = {
-  appName: 'Gin-Vue-Admin',
-  appLogo: 'https://www.gin-vue-admin.com/img/logo.png',
+  appName: 'XXX 效能平台',
+  appLogo: "@/assets/logo.png",
   showViteLogo: true
 }
 
@@ -13,17 +13,12 @@ export const viteLogo = (env) => {
     const chalk = require('chalk')
     console.log(
       chalk.green(
-        `> 欢迎使用Gin-Vue-Admin，开源地址：https://github.com/flipped-aurora/gin-vue-admin`
+        `> 欢迎使用Platform-eff`
       )
     )
     console.log(
       chalk.green(
-        `> 当前版本:v2.5.6`
-      )
-    )
-    console.log(
-      chalk.green(
-        `> 加群方式:微信：shouzi_1994 QQ群：622360840`
+        `> 当前版本:v1.0.0`
       )
     )
     console.log(
@@ -44,11 +39,6 @@ export const viteLogo = (env) => {
     console.log(
       chalk.green(
         `> 默认前端文件运行地址:http://127.0.0.1:${env.VITE_CLI_PORT}`
-      )
-    )
-    console.log(
-      chalk.green(
-        `> 如果项目让您获得了收益，希望您能请团队喝杯可乐:https://www.gin-vue-admin.com/coffee/index.html`
       )
     )
     console.log('\n')

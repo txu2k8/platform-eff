@@ -36,33 +36,33 @@
                 <el-tooltip
                   class="item"
                   effect="light"
-                  content="北京反转极光科技有限公司-技术部-前端事业群"
+                  content="XXX科技有限公司-测试部"
                   placement="top"
                 >
                   <li>
                     <el-icon>
                       <data-analysis />
                     </el-icon>
-                    北京反转极光科技有限公司-技术部-前端事业群
+                    XXX科技有限公司-测试部
                   </li>
                 </el-tooltip>
                 <li>
                   <el-icon>
                     <video-camera />
                   </el-icon>
-                  中国·北京市·朝阳区
+                  中国·成都市·高新区
                 </li>
                 <el-tooltip
                   class="item"
                   effect="light"
-                  content="GoLang/JavaScript/Vue/Gorm"
+                  content="GoLang/Python/Vue"
                   placement="top"
                 >
                   <li>
                     <el-icon>
                       <medal />
                     </el-icon>
-                    GoLang/JavaScript/Vue/Gorm
+                    GoLang/Python/Vue
                   </li>
                 </el-tooltip>
               </ul>

@@ -55,16 +55,19 @@
           <el-form-item>
             <el-button
               type="primary"
-              style="width: 46%"
+              size="large"
+              style="width: 100%; margin-left: 0%"
+              @click="submitForm"
+            >登 录</el-button>
+          </el-form-item>
+          <el-form-item>
+            <el-button
+              v-if="checkIsNeedInit()"
+              type="warning"
+              style="width: 100%"
               size="large"
               @click="checkInit"
             >前往初始化</el-button>
-            <el-button
-              type="primary"
-              size="large"
-              style="width: 46%; margin-left: 8%"
-              @click="submitForm"
-            >登 录</el-button>
           </el-form-item>
         </el-form>
       </div>
@@ -147,7 +150,7 @@ const loginForm = ref(null)
 const picPath = ref('')
 const loginFormData = reactive({
   username: 'admin',
-  password: '123456',
+  password: 'admin@123',
   captcha: '',
   captchaId: '',
   openCaptcha: false,
@@ -186,8 +189,19 @@ const submitForm = () => {
   })
 }
 
+// 检查是否需要初始化
+const checkIsNeedInit = () => {
+  const res = checkDB()
+  if (res.data?.needInit) {
+      return true
+    } else {
+      return false
+    }
+}
+
 // 跳转初始化
 const checkInit = async() => {
+  console.log(checkIsNeedInit())
   const res = await checkDB()
   if (res.code === 0) {
     if (res.data?.needInit) {

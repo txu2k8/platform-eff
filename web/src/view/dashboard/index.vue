@@ -1,6 +1,6 @@
 <template>
   <div class="page">
-    <div class="gva-card-box">
+    <div v-if="false" class="gva-card-box">
       <div class="gva-card gva-top-card">
         <div class="gva-top-card-left">
           <div class="gva-top-card-left-title">早安，管理员，请开始一天的工作吧</div>

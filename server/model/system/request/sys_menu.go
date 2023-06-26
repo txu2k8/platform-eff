@@ -20,7 +20,7 @@ func DefaultMenu() []system.SysBaseMenu {
 		Component: "view/dashboard/index.vue",
 		Sort:      1,
 		Meta: system.Meta{
-			Title: "仪表盘",
+			Title: "首页",
 			Icon:  "setting",
 		},
 	}}

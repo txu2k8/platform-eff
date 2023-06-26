@@ -26,6 +26,7 @@ yarn-error.log*
 /server/gva
 /server/latest_log
 /server/server.exe
+/server/server
 
 *.iml
 web/.pnpm-debug.log
