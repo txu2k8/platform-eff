@@ -3,8 +3,8 @@
  */
 
 const config = {
-  appName: 'XXX 效能平台',
-  appLogo: "@/assets/logo.png",
+  appName: 'Platform-EFF',
+  appLogo: "@/assets/logo.jpg",
   showViteLogo: true
 }
 
