@@ -3,12 +3,12 @@
     <div>
       <span>Powered by</span>
       <span>
-        <a href="https://github.com/flipped-aurora/gin-vue-admin">{{ $GIN_VUE_ADMIN.appName }}</a>
+        <a href="https://github.com/txu2k8/platform-eff">{{ $GIN_VUE_ADMIN.appName }}</a>
       </span>
       <el-divider direction="vertical" />
       <span>Copyright</span>
       <span>
-        <a href="https://github.com/flipped-aurora">flipped-aurora团队</a>
+        <a href="https://github.com/txu2k8">txu2k8</a>
       </span>
     </div>
   </div>

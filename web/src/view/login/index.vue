@@ -5,7 +5,7 @@
         <div class="login_panel_form_title">
           <img
             class="login_panel_form_title_logo"
-            :src="$GIN_VUE_ADMIN.appLogo"
+            src="@/assets/logo.jpg"
             alt
           >
           <p class="login_panel_form_title_p">{{ $GIN_VUE_ADMIN.appName }}</p>
@@ -85,9 +85,6 @@
             target="_blank"
           >
             <img src="@/assets/github.png" class="link-icon" alt="github">
-          </a>
-          <a href="https://space.bilibili.com/322210472" target="_blank">
-            <img src="@/assets/video.png" class="link-icon" alt="视频站">
           </a>
         </div>
         <div class="copyright">
@@ -192,10 +189,14 @@ const submitForm = () => {
 // 检查是否需要初始化
 const checkIsNeedInit = () => {
   const res = checkDB()
-  if (res.data?.needInit) {
+  if (res.code === 0) {
+    if (res.data?.needInit) {
       return true
     } else {
       return false
+    }
+  } else {
+      return true
     }
 }
 
